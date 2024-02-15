@@ -1,5 +1,3 @@
 db.sqlite3
 /.idea
-/superlists/__pycache__/
-/lists/__pycache__/
-/lists/migrations/__pycache__
+__pycache__/
