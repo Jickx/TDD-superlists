@@ -1,19 +1,17 @@
+PR=poetry run python manage.py
+
 dev:
-	poetry run python manage.py runserver
+	$(PR) runserver
 
 test:
-	poetry run python manage.py test
+	$(PR) test lists
 
 fun-test:
-	poetry run python manage.py test functional_tests
+	$(PR) test functional_tests
 
 migrate:
-	poetry run python manage.py makemigrations
-	poetry run python manage.py migrate
+	$(PR) makemigrations
+	$(PR) migrate
 
 shell:
-	poetry run python manage.py shell_plus --ipython
-
-
-
-
+	$(PR) shell_plus --ipython
